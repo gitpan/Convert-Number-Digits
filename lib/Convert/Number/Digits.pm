@@ -7,6 +7,8 @@ BEGIN
 use strict;
 use vars qw( %Digits $VERSION );
 
+$VERSION = "0.03";
+
 %Digits =(
 	toWestern	=> "0-9",
 	toArabic	=> "\x{0660}-\x{0669}",
@@ -27,17 +29,17 @@ use vars qw( %Digits $VERSION );
 	toEthiopic 	=> "0\x{1369}-\x{1371}",
 	toKhmer		=> "\x{17E0}-\x{17E9}",
 	toMongolian	=> "\x{1810}-\x{1819}",
+	toLimbu    	=> "\x{1946}-\x{194F}",
 	toRomanUpper	=> "0\x{2160}-\x{2168}",
 	toRomanLower	=> "0\x{2170}-\x{2178}",
 	toFullWidth	=> "\x{FF10}-\x{FF19}",
+	toOsmanya	=> "\x{104A0}-\x{104A9}",
 	toBold		=> "\x{1D7CE}-\x{1D7D7}",
 	toDoubleStruck 	=> "\x{1D7D8}-\x{1D7E1}",
 	toSansSerif	=> "\x{1D7E2}-\x{1D7EB}",
 	toSansSerifBold	=> "\x{1D7EC}-\x{1D7F5}",
 	toMonoSpace	=> "\x{1D7F6}-\x{1D7FF}"
 );
-
-$VERSION = "0.02";
 
 }
 
@@ -208,6 +210,8 @@ for all scripts.
 
 =item C<toLao> - output digits in Lao script (໑-໒).
 
+=item C<toLimbu> - output digits in Limbu script (᥆-᥏).
+
 =item C<toMalayalam> - output digits in Malayalam script (൧-൨).
 
 =item C<toMongolian> - output digits in Mongolian script (᠑-᠒).
@@ -217,6 +221,8 @@ for all scripts.
 =item C<toMyanmar> - output digits in Myanmar script (၁-၂).
 
 =item C<toOriya> - output digits in Oriya script (୧-୨).
+
+=item C<toOsmanya> - output digits in Osmanya script (𐒠-𐒩).
 
 =item C<toRomanLower> - output digits in lowercase Roman numerals (ⅰ-ⅸ).
 
